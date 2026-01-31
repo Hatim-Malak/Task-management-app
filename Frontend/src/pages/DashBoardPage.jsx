@@ -260,20 +260,9 @@ const deleteTodo = useTodo((state) => state.deleteTodo)
               className="px-4 py-3 bg-slate-50 border-2 border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100 transition-all cursor-pointer font-medium"
             >
               <option value="all">All Status</option>
-              <option value="pending">Pending</option>
-              <option value="in-progress">In Progress</option>
-              <option value="completed">Completed</option>
-            </select>
-
-            <select
-              value={filterPriority}
-              onChange={(e) => setFilterPriority(e.target.value)}
-              className="px-4 py-3 bg-slate-50 border-2 border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100 transition-all cursor-pointer font-medium"
-            >
-              <option value="all">All Priority</option>
-              <option value="low">Low Priority</option>
-              <option value="medium">Medium Priority</option>
-              <option value="high">High Priority</option>
+              <option value="Todo">Pending</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Completed">Completed</option>
             </select>
           </div>
         </motion.div>
