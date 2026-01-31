@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://starlit-stationary-frontend.vercel.app",
+  "https://taskflow-task-managment.vercel.app",
 ];
 
 app.use(cookieParser());
