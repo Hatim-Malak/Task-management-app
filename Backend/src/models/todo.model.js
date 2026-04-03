@@ -19,7 +19,20 @@ const todoSchema = new mongoose.Schema(
       type: String,
       enum:["Todo","In Progress","Completed"],
       default: "Todo"
-    }
+    },
+    priority:{
+      type:String,
+      enum:["low","medium","high"],
+      required:true
+    },
+    startDate:{
+      type:Date,
+      default:Date.now
+    },
+    endDate:{
+      type:Date,
+      required:true
+    },
   },
   { timestamps: true }
 );
