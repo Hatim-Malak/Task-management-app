@@ -5,10 +5,10 @@ A full-stack task management application built with modern web technologies. Thi
 ## Features
 
 - **User Authentication**: Secure signup and login with JWT tokens
-- **Task Management**: Create, read, update, and delete tasks
+- **Task Management**: Create, read, update, and delete tasks with priority levels (low, medium, high), start dates, and end dates
 - **Responsive Design**: Mobile-friendly interface built with Tailwind CSS
 - **Real-time Updates**: Dynamic task management with instant UI updates
-- **User Dashboard**: Personalized dashboard for managing tasks
+- **User Dashboard**: Personalized dashboard for managing tasks with search and filtering capabilities
 - **Secure API**: Protected routes with JWT authentication middleware
 
 ## Tech Stack
@@ -181,18 +181,18 @@ npm run preview
 - `POST /api/auth/logout` - Logout user
 
 ### Todo Routes
-- `GET /api/todos` - Get all tasks for logged-in user
-- `POST /api/todos` - Create a new task
-- `PUT /api/todos/:id` - Update a task
+- `GET /api/todos` - Get all tasks for logged-in user (includes title, description, status, priority, start date, end date)
+- `POST /api/todos` - Create a new task (requires title, description, priority, end date)
+- `PUT /api/todos/:id` - Update a task (can update any field including status, priority, dates)
 - `DELETE /api/todos/:id` - Delete a task
 
 ## Usage
 
 1. **Create an Account**: Sign up with your email and password
 2. **Login**: Access your account with your credentials
-3. **Add Tasks**: Create new tasks from the dashboard
-4. **Manage Tasks**: Update or delete tasks as needed
-5. **Track Progress**: View all your tasks in one place
+3. **Add Tasks**: Create new tasks from the dashboard, specifying title, description, priority level, and end date
+4. **Manage Tasks**: Update task details, status, or delete tasks as needed
+5. **Track Progress**: View all your tasks in one place with filtering by status and priority
 
 ## Security Features
 
@@ -228,4 +228,4 @@ For issues, questions, or suggestions, please open an issue on the project repos
 
 ---
 
-**Last Updated**: January 31, 2026
+**Last Updated**: April 3, 2026

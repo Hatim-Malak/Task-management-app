@@ -40,7 +40,6 @@ const DashBoardPage = () => {
     fetchTodos()
   }, [])
 
-  // Apply Search and Dropdown Filters
   const filteredTodos = todos.filter(todo => {
     const matchesSearch = todo.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           (todo.description?.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -50,7 +49,7 @@ const DashBoardPage = () => {
     return matchesSearch && matchesStatus && matchesPriority
   })
 
-  // Stats calculation
+
   const stats = {
     total: todos.length,
     todo: todos.filter(t => t.status === 'Todo').length,
